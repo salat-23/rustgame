@@ -5,3 +5,7 @@ pub const CHEST: &str = "
 ";
 
 pub const PLAYER: &str = " o \n/|\\\n/ \\";
+
+
+//Monster sprites
+pub const SLIME: &str = " _____\n/     \\\n\\_____/";
