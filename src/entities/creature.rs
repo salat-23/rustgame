@@ -15,7 +15,9 @@ impl Creature {
 }
 
 pub trait TCreature {
-    fn creature(&mut self) -> &mut Creature;
+    fn creature(& self) -> &Creature;
+
+    fn creature_mut(&mut self) -> &mut Creature;
 }
 
 impl TEntity for Creature {
@@ -23,7 +25,9 @@ impl TEntity for Creature {
         &self.entity
     }
 
-
+    fn entity_mut(&mut self) -> &mut Entity {
+        &mut self.entity
+    }
 }
 
 impl TStats for Creature {
@@ -49,7 +53,11 @@ impl Player {
 }
 
 impl TCreature for Player {
-    fn creature(&mut self) -> &mut Creature {
+    fn creature(&self) -> &Creature {
+        & self.creature
+    }
+    
+    fn creature_mut(&mut self) -> &mut Creature {
         &mut self.creature
     }
 }

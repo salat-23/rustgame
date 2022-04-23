@@ -19,7 +19,11 @@ impl Slime {
 }
 
 impl TCreature for Slime {
-    fn creature(&mut self) -> &mut Creature {
+    fn creature(&self) -> &Creature {
+        &self.creature
+    }
+
+    fn creature_mut(&mut self) -> &mut Creature {
         &mut self.creature
     }
 }
