@@ -1,6 +1,18 @@
-use crate::entities::creature::Player;
+use ruscii::keyboard::KeyEvent;
 
-struct Game {
-    player: Player,
+pub struct Game {
+
     
+}
+
+impl Game {
+
+    pub fn update(&mut self, delta_time: f32, key_events: &Vec<KeyEvent>) {
+
+    }
+
+    pub fn new() -> Game {
+        Game{ }
+    }
+
 }
