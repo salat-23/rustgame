@@ -4,6 +4,7 @@ mod stats;
 mod loot;
 mod dungeon;
 mod entities;
+mod game;
 
 
 use std::time::{SystemTime, UNIX_EPOCH};

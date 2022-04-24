@@ -13,7 +13,9 @@ use crate::stats::Stats;
 
 pub struct Dungeon {
     player: Player,
+    current_floor:
     enemies: Vec<Box<dyn TCreature>>,
+
 }
 
 impl Dungeon {
@@ -21,9 +23,7 @@ impl Dungeon {
         let mut player = Player::new();
         let mut enemies: Vec<Box<dyn TCreature>> = Vec::new();
 
-
-
-
+        for i in 1..
         enemies.push(Box::new(Slime::new(-10)));
 
         Dungeon { player, enemies }
